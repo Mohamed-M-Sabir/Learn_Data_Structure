@@ -1,0 +1,35 @@
+/*
+ * stack.h
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Mohamed Saber
+ */
+
+#ifndef STACK_H_
+#define STACK_H_
+#include "std_types.h"
+#define STACK_MAX_SIZE 5
+typedef struct {
+
+	uint32_t stack_arr[STACK_MAX_SIZE];
+	uint32_t stack_ptr;
+
+}stack_type;
+
+
+typedef enum
+{
+	OK,NOK
+}ret_status;
+
+
+typedef enum
+{
+	FULL,EMPTY,utilized
+}stack_status;
+
+ret_status stack_init(stack_type *mystack);
+
+stack_status stack_status_func(stack_type *mystack);
+
+#endif /* STACK_H_ */

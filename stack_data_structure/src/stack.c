@@ -1,0 +1,187 @@
+/*
+ * stack.c
+
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Mohamed Saber
+ */
+
+#include "std_types.h"
+#include "stack.h"
+#include <stdio.h>
+
+
+
+/**
+ * @brief intialize the stack
+ * @param stack_ptr pointer to the stack
+ * @retval return the status of the initialization process
+ */
+ret_status stack_init(stack_type *mystack)
+{
+
+	ret_status ret;
+	if(NULL==mystack)
+	{
+		ret=NOK;
+
+		printf("failed to create the stack\n");
+	}
+	else
+	{
+		ret=OK;
+		mystack->stack_ptr=-1;
+
+		printf("new stack is created\n");
+	}
+
+	return ret;
+}
+
+
+
+/**
+ * @brief check stack is full,empty,utilized
+ * @param stack_ptr pointer to the stack
+ * @retval return the stack status
+ */
+static stack_status stack_status_func(stack_type *mystack)
+{
+
+	stack_status status;
+	if(mystack->stack_ptr==-1)
+	{
+		status=EMPTY;
+	}
+
+	else if(mystack->stack_ptr>=STACK_MAX_SIZE-1)
+	{
+		status=FULL;
+
+	}
+
+	else
+	{
+		status=UTILIZED;
+	}
+
+	return status;
+}
+
+
+
+
+ret_status stack_push(stack_type *mystack,uint32_t value)
+{
+	ret_status ret;
+	if(NULL==mystack || FULL==stack_status_func(mystack))
+	{
+		printf("can't push to the stack\n");
+		ret=NOK;
+	}
+	else
+	{
+		ret=OK;
+
+		(mystack->stack_ptr)++;
+
+		mystack->stack_arr[mystack->stack_ptr]=value;
+
+		printf("value %d has been pushed to the stack at index %d\n",value,mystack->stack_ptr);
+	}
+
+	return ret;
+}
+
+
+ret_status stack_pop(stack_type *mystack,uint32_t *value)
+{
+	ret_status ret;
+	if(NULL==mystack || EMPTY==stack_status_func(mystack))
+		{
+			ret=NOK;
+			printf("can't pop from the stack\n");
+		}
+		else
+		{
+			ret=OK;
+
+			*value=mystack->stack_arr[mystack->stack_ptr];
+
+			printf("value %d has been deleted from the index %d\n",*value,mystack->stack_ptr);
+
+			(mystack->stack_ptr)--;
+
+
+
+		}
+	return ret;
+}
+
+ret_status stack_top(stack_type *mystack,uint32_t *value)
+{
+	ret_status ret;
+		if(NULL==mystack || EMPTY==stack_status_func(mystack))
+			{
+				ret=NOK;
+				printf("can't get the top of the stack\n");
+			}
+			else
+			{
+				ret=OK;
+
+				*value=mystack->stack_arr[mystack->stack_ptr];
+
+				printf("value %d is the stack top in the index %d\n",*value,mystack->stack_ptr);
+
+			}
+		return ret;
+}
+
+ret_status stack_size(stack_type *mystack,uint32_t *size)
+{
+	ret_status ret;
+			if(NULL==mystack)
+				{
+					ret=NOK;
+					printf("failed to get the size of the stack\n");
+				}
+				else
+				{
+					ret=OK;
+
+					size=mystack->stack_ptr+1;
+
+					printf("size of the stack is %d\n",size);
+
+				}
+			return ret;
+}
+
+ret_status stack_display(stack_type *mystack)
+
+{
+	ret_status ret;
+	uint32_t i;
+	uint32_t top;
+		if(NULL==mystack)
+			{
+				ret=NOK;
+				printf("failed to display the stack\n");
+			}
+			else
+			{
+				ret=OK;
+
+				top=mystack->stack_ptr;
+
+				printf("\n ********** Displaying the stack **********\n");
+				for(i=0 ; i<=top ; i++)
+				{
+					printf("%d\n",mystack->stack_arr[i]);
+				}
+
+
+			}
+		return ret;
+}

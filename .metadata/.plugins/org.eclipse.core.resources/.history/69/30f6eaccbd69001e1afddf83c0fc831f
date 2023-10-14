@@ -1,0 +1,18 @@
+/*
+ * stack.c
+
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Mohamed Saber
+ */
+
+#include "std_types.h"
+#include "stack.h"
+#include <stdio.h>
+void stack_init(stack_type *mystack)
+{
+	mystack->stack_ptr=-1;
+
+	printf("new stack is created\n");
+
+}

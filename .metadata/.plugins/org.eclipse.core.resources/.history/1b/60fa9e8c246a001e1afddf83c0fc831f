@@ -1,0 +1,55 @@
+/*
+ * stack.c
+
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Mohamed Saber
+ */
+
+#include "std_types.h"
+#include "stack.h"
+#include <stdio.h>
+
+
+ret_status stack_init(stack_type *mystack)
+{
+
+	ret_status ret;
+	if(NULL==mystack)
+	{
+		ret=NOK;
+	}
+	else
+	{
+		ret=OK;
+		mystack->stack_ptr=-1;
+
+		printf("new stack is created\n");
+	}
+
+	return ret;
+}
+
+
+
+
+ret_status stack_status_func(stack_type *mystack)
+{
+
+	stack_status status;
+	if(mystack->stack_ptr==-1)
+	{
+		status=EMPTY;
+	}
+
+	else if(mystack->stack_ptr==STACK_MAX_SIZE)
+	{
+		status=FULL;
+
+	}
+
+	else
+	{
+		status=UTILIZED;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stack_data_structure/src/stack_data_structure.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;stack_data_structure.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/stack_data_structure.c" name="main.c" stamp="1697193858460" updateReferences="true"/>
+</session>

@@ -1,0 +1,171 @@
+13:12:00 **** Rebuild of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_init':
+..\src\stack.c:16:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("new stack is created\n");
+  ^~~~~~
+..\src\stack.c:16:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\stack.c:16:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+13:12:43 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:41:43 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_pop':
+..\src\stack.c:109:54: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+    printf("value %d has been deleted from the index %x",*value,value);
+                                                      ^
+..\src\stack.c: In function 'stack_top':
+..\src\stack.c:128:53: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+     printf("value %d is the stack top in the index %x",*value,value);
+                                                     ^
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:145:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:147:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d",size);
+                                    ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:43:29 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_pop':
+..\src\stack.c:109:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+    printf("value %d has been deleted from the index %d\n",*value,value);
+                                                      ^
+..\src\stack.c: In function 'stack_top':
+..\src\stack.c:128:53: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+     printf("value %d is the stack top in the index %d\n",*value,value);
+                                                     ^
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:145:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:147:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:49:23 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:148:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:150:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:52:38 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:148:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:150:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:53:46 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:148:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:150:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:55:54 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:150:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:152:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:56:16 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+02:58:12 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+02:59:12 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:152:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:154:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+03:00:02 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:152:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:154:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+03:01:04 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function 'main':
+..\src\main.c:19:11: warning: unused variable 'size' [-Wunused-variable]
+  uint32_t size;
+           ^~~~
+..\src\main.c:18:11: warning: unused variable 'value' [-Wunused-variable]
+  uint32_t value;
+           ^~~~~
+..\src\main.c:17:13: warning: unused variable 'stack1' [-Wunused-variable]
+  stack_type stack1;
+             ^~~~~~
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
+03:03:34 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.c" 
+..\src\stack.c: In function 'stack_size':
+..\src\stack.c:153:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      size=mystack->stack_ptr+1;
+          ^
+..\src\stack.c:155:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t * {aka unsigned int *}' [-Wformat=]
+      printf("size of the stack is %d\n",size);
+                                    ^
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+03:04:27 **** Incremental Build of configuration Debug for project stack_data_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o stack_data_structure.exe "src\\main.o" "src\\stack.o" 
+Info: Nothing to build for stack_data_structure
